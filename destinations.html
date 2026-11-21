@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelGo - Destinations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+
+                <a href="index.html" class="text-2xl font-bold text-blue-600">
+                    ✈️ TravelGo
+                </a>
+
+                <div class="hidden md:flex items-center gap-7">
+                    <a href="index.html" class="text-slate-600 hover:text-blue-600">Home</a>
+                    <a href="destinations.html" class="text-blue-600 font-semibold">Destinations</a>
+                    <a href="trips.html" class="text-slate-600 hover:text-blue-600">Trips</a>
+                    <a href="my-bookings.html" class="text-slate-600 hover:text-blue-600">My Bookings</a>
+                    <a href="contact.html" class="text-slate-600 hover:text-blue-600">Contact</a>
+                </div>
+
+                <div class="hidden md:flex items-center gap-3">
+                    <a href="profile.html" class="px-4 py-2 text-slate-600 hover:text-blue-600">Profile</a>
+                    <a href="booking.html" class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
+                        Book Now
+                    </a>
+                </div>
+
+                <button id="menuButton" class="md:hidden text-2xl">
+                    ☰
+                </button>
+
+            </div>
+        </div>
+        
+
+    </nav>
+
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+        <div class="px-4 py-4 space-y-3">
+            <a href="index.html" class="block text-slate-600 hover:text-blue-600">Home</a>
+            <a href="destinations.html" class="block text-blue-600 font-semibold">Destinations</a>
+            <a href="trips.html" class="block text-slate-600 hover:text-blue-600">Trips</a>
+            <a href="my-bookings.html" class="block text-slate-600 hover:text-blue-600">My Bookings</a>
+            <a href="profile.html" class="block text-slate-600 hover:text-blue-600">Profile</a>
+            <a href="contact.html" class="block text-slate-600 hover:text-blue-600">Contact</a>
+            <a href="booking.html" class="block bg-blue-600 text-white text-center px-5 py-2 rounded-lg">
+                Book Now
+            </a>
+        </div>
+    </div>
+
+    <header class="bg-blue-800 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+           
+            <span class="text-blue-200 font-semibold uppercase text-sm">
+                Explore The World
+            </span>
+
+            <h1 class="text-4xl md:text-5xl font-bold mt-3">
+                Discover Destinations
+            </h1>
+
+            <p class="text-blue-100 text-lg mt-4 max-w-2xl">
+                Explore beautiful destinations around the world and find the perfect place for your next adventure.
+            </p>
+
+        </div>
+        
+
+    </header>
+
+    <main class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-5 mb-10">
+
+                <div>
+                    <h2 class="text-2xl font-bold">Popular Destinations</h2>
+                    <p class="text-slate-500 mt-1">
+                        Choose your next destination.
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                    <button class="bg-blue-600 text-white px-5 py-2 rounded-lg">
+                        All
+                    </button>
+
+                    <button class="bg-white border border-slate-300 px-5 py-2 rounded-lg hover:bg-slate-100">
+                        Beach
+                    </button>
+
+                    <button class="bg-white border border-slate-300 px-5 py-2 rounded-lg hover:bg-slate-100">
+                        Europe
+                    </button>
+
+                    <button class="bg-white border border-slate-300 px-5 py-2 rounded-lg hover:bg-slate-100">
+                        Asia
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
+
+                <article
+                    class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg transition">
+
+                    <div class="relative">
+                        <img src="images/maldives.webp" alt="Maldives" class="w-full h-60 object-cover">
+
+                        <span
+                            class="absolute top-4 left-4 bg-white px-3 py-1 rounded-full text-sm font-semibold text-blue-600">
+                            Beach
+                        </span>
+                    </div>
+
+                    <div class="p-6">
+
+                        <div class="flex justify-between items-start gap-3">
+
+                            <div>
+                                <h3 class="text-xl font-bold">Maldives</h3>
+                                <p class="text-slate-500 mt-1">Indian Ocean</p>
+                            </div>
+
+                            <span class="text-yellow-500 font-semibold">
+                                ★ 4.9
+                            </span>
+
+                        </div>
+
+                        <p class="text-slate-500 mt-4">
+                            Relax on beautiful beaches and enjoy unforgettable tropical experiences.
+                        </p>
+
+                        <div class="flex items-center justify-between mt-6">
+
+                            <span class="font-bold text-blue-600">
+                                From $899
+                            </span>
+
+                            <a href="trip-details.html"
+                                class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700">
+                                Explore
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg transition">
+
+                    <div class="relative">
+                        <img src="images/paris.jpg" alt="Paris" class="w-full h-60 object-cover">
+
+                        <span
+                            class="absolute top-4 left-4 bg-white px-3 py-1 rounded-full text-sm font-semibold text-purple-600">
+                            Europe
+                        </span>
+                    </div>
+
+                    <div class="p-6">
+
+                        <div class="flex justify-between items-start gap-3">
+
+                            <div>
+                                <h3 class="text-xl font-bold">Paris</h3>
+                                <p class="text-slate-500 mt-1">France</p>
+                            </div>
+
+                            <span class="text-yellow-500 font-semibold">
+                                ★ 4.8
+                            </span>
+
+                        </div>
+
+                        <p class="text-slate-500 mt-4">
+                            Discover iconic landmarks, charming streets, art, culture, and French cuisine.
+                        </p>
+
+                        <div class="flex items-center justify-between mt-6">
+
+                            <span class="font-bold text-blue-600">
+                                From $749
+                            </span>
+
+                            <a href="trip-details.html"
+                                class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700">
+                                Explore
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg transition">
+
+                    <div class="relative">
+                        <img src="images/rome.webp" alt="Rome" class="w-full h-60 object-cover">
+
+                        <span
+                            class="absolute top-4 left-4 bg-white px-3 py-1 rounded-full text-sm font-semibold text-purple-600">
+                            Europe
+                        </span>
+                    </div>
+
+                    <div class="p-6">
+
+                        <div class="flex justify-between items-start gap-3">
+
+                            <div>
+                                <h3 class="text-xl font-bold">Rome</h3>
+                                <p class="text-slate-500 mt-1">Italy</p>
+                            </div>
+
+                            <span class="text-yellow-500 font-semibold">
+                                ★ 4.7
+                            </span>
+
+                        </div>
+
+                        <p class="text-slate-500 mt-4">
+                            Explore ancient history, incredible architecture, museums, and Italian culture.
+                        </p>
+
+                        <div class="flex items-center justify-between mt-6">
+
+                            <span class="font-bold text-blue-600">
+                                From $699
+                            </span>
+
+                            <a href="trip-details.html"
+                                class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700">
+                                Explore
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg transition">
+
+                    <div class="relative">
+                        <img src="images/switzerland.webp" alt="Switzerland" class="w-full h-60 object-cover">
+
+                        <span
+                            class="absolute top-4 left-4 bg-white px-3 py-1 rounded-full text-sm font-semibold text-green-600">
+                            Adventure
+                        </span>
+                    </div>
+
+                    <div class="p-6">
+
+                        <div class="flex justify-between items-start gap-3">
+
+                            <div>
+                                <h3 class="text-xl font-bold">Switzerland</h3>
+                                <p class="text-slate-500 mt-1">Europe</p>
+                            </div>
+
+                            <span class="text-yellow-500 font-semibold">
+                                ★ 4.9
+                            </span>
+
+                        </div>
+
+                        <p class="text-slate-500 mt-4">
+                            Experience breathtaking mountains, lakes, villages, and unforgettable adventures.
+                        </p>
+
+                        <div class="flex items-center justify-between mt-6">
+
+                            <span class="font-bold text-blue-600">
+                                From $999
+                            </span>
+
+                            <a href="trip-details.html"
+                                class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700">
+                                Explore
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg transition">
+
+                    <div class="relative">
+                        <img src="images/istanbul.webp" alt="Istanbul" class="w-full h-60 object-cover">
+
+                        <span
+                            class="absolute top-4 left-4 bg-white px-3 py-1 rounded-full text-sm font-semibold text-orange-600">
+                            Culture
+                        </span>
+                    </div>
+
+                    <div class="p-6">
+
+                        <div class="flex justify-between items-start gap-3">
+
+                            <div>
+                                <h3 class="text-xl font-bold">Istanbul</h3>
+                                <p class="text-slate-500 mt-1">Turkey</p>
+                            </div>
+
+                            <span class="text-yellow-500 font-semibold">
+                                ★ 4.8
+                            </span>
+
+                        </div>
+
+                        <p class="text-slate-500 mt-4">
+                            Discover the perfect combination of history, culture, food, and modern life.
+                        </p>
+
+                        <div class="flex items-center justify-between mt-6">
+
+                            <span class="font-bold text-blue-600">
+                                From $499
+                            </span>
+
+                            <a href="trip-details.html"
+                                class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700">
+                                Explore
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg transition">
+
+                    <div class="relative">
+                        <img src="images/tokyo.webp" alt="Tokyo" class="w-full h-60 object-cover">
+
+                        <span
+                            class="absolute top-4 left-4 bg-white px-3 py-1 rounded-full text-sm font-semibold text-red-600">
+                            Asia
+                        </span>
+                    </div>
+
+                    <div class="p-6">
+
+                        <div class="flex justify-between items-start gap-3">
+
+                            <div>
+                                <h3 class="text-xl font-bold">Tokyo</h3>
+                                <p class="text-slate-500 mt-1">Japan</p>
+                            </div>
+
+                            <span class="text-yellow-500 font-semibold">
+                                ★ 4.9
+                            </span>
+
+                        </div>
+
+                        <p class="text-slate-500 mt-4">
+                            Experience Japanese culture, technology, food, shopping, and vibrant city life.
+                        </p>
+
+                        <div class="flex items-center justify-between mt-6">
+
+                            <span class="font-bold text-blue-600">
+                                From $1,099
+                            </span>
+
+                            <a href="trip-details.html"
+                                class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700">
+                                Explore
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <section class="mt-14 bg-blue-600 rounded-2xl p-8 md:p-10 text-white">
+
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold">
+                            Can't decide where to go?
+                        </h2>
+
+                        <p class="text-blue-100 mt-2">
+                            Explore our recommended trips and find your perfect adventure.
+                        </p>
+                    </div>
+
+                    <a href="trips.html"
+                        class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold text-center hover:bg-blue-50">
+                        Explore Trips →
+                    </a>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+    </main>
+
+    <footer class="bg-slate-950 text-slate-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">✈️ TravelGo</h3>
+                    <p class="text-slate-400">Discover destinations, explore trips, and make your next journey
+                        unforgettable.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Explore</h4>
+                    <ul class="space-y-3">
+                        <li><a href="destinations.html" class="hover:text-white">Destinations</a></li>
+                        <li><a href="trips.html" class="hover:text-white">Trips</a></li>
+                        <li><a href="my-bookings.html" class="hover:text-white">My Bookings</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-white mb-4">TravelGo</h4>
+                    <ul class="space-y-3">
+                        <li><a href="profile.html" class="hover:text-white">Profile</a></li>
+                        <li><a href="booking.html" class="hover:text-white">Book Now</a></li>
+                        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Contact</h4>
+                    <ul class="space-y-3 text-slate-400">
+                        <li>📧 travelgo@gmail.com</li>
+                        <li>📞 +970 595 220 835</li>
+                        <li>📍 Palestine</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="border-t border-slate-800 mt-10 pt-6 text-center text-slate-500">
+                <p>© 2026 TravelGo. All rights reserved.
+                    rayanawad.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+   
+
+</body>
+
+</html>
